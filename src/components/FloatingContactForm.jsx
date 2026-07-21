@@ -60,7 +60,7 @@ function FloatingContactForm() {
       publicKey: import.meta.env.VITE_EMAILJS_PUBLIC_KEY,
       toEmail:
         import.meta.env.VITE_CONTACT_RECEIVER_EMAIL ||
-        'niyas.zealdesigner@gmail.com',
+        'srinivas@zealgroups.in',
     }),
     [],
   )
