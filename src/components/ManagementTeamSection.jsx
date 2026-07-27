@@ -1,26 +1,26 @@
 const profiles = [
   {
-    name: 'P. Srinivasan',
-    role: 'Managing Director',
-    image: '/management-01.jpg',
-    position: 'object-[center_top]',
-    email: 'srinivas@zealgroups.in',
+    name: "P. Srinivasan",
+    role: "Managing Director",
+    image: "/management-01.jpg",
+    position: "object-[center_top]",
+    email: "srinivas@zealgroups.in",
   },
   {
-    name: 'Manzoor Ahmed Khan',
-    role: 'Managing Director',
-    image: '/management-02.jpg',
-    position: 'object-[center_top]',
-    email: 'manzoor@zealgroups.in',
+    name: "Manzoor Ahmed Khan",
+    role: "Managing Director",
+    image: "/management-02.jpg",
+    position: "object-[center_top]",
+    email: "manzoor@zealgroups.in",
   },
   {
-    name: 'Abu Hassan',
-    role: 'Managing Director',
-    image: '/management-03.jpg',
-    position: 'object-[center_top]',
-    email: 'hassan@zealgroups.in',
+    name: "Abu Hassan",
+    role: "Managing Director",
+    image: "/management-03.jpg",
+    position: "object-[center_top]",
+    email: "hassan@zealgroups.in",
   },
-]
+];
 
 function MailIcon() {
   return (
@@ -30,7 +30,7 @@ function MailIcon() {
       className="h-5 w-5 object-contain"
       aria-hidden="true"
     />
-  )
+  );
 }
 
 function ManagementTeamSection() {
@@ -38,7 +38,7 @@ function ManagementTeamSection() {
     <section className="relative overflow-hidden bg-[#f2f6fa] px-6 py-24 sm:px-8 sm:py-28 lg:px-10">
       <div
         className="pointer-events-none absolute inset-0 bg-cover bg-center opacity-[0.07]"
-        style={{ backgroundImage: "url('/Banner 1.jpg')" }}
+        style={{ backgroundImage: "url('/Banner%201.jpg')" }}
       />
       <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(180deg,rgba(255,255,255,0.94),rgba(242,246,250,0.98))]" />
 
@@ -72,6 +72,7 @@ function ManagementTeamSection() {
                     alt={profile.name}
                     className={`h-full w-full object-cover transition-transform duration-300 ease-out group-hover:scale-[1.02] ${profile.position}`}
                     loading="lazy"
+                    decoding="async"
                   />
                   <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(255,255,255,0.02)_0%,rgba(34,52,74,0.12)_100%)]" />
                 </div>
@@ -82,7 +83,9 @@ function ManagementTeamSection() {
                       <h3 className="truncate text-[1.1rem] font-semibold tracking-[-0.03em] text-[#1a1a1a]">
                         {profile.name}
                       </h3>
-                      <p className="mt-1 text-sm text-[#6b7683]">{profile.role}</p>
+                      <p className="mt-1 text-sm text-[#6b7683]">
+                        {profile.role}
+                      </p>
                     </div>
 
                     <a
@@ -98,7 +101,7 @@ function ManagementTeamSection() {
 
               <div className="mt-5 space-y-2 px-1">
                 <p className="text-sm leading-6 text-[#5e6b78]">
-                  <span className="font-medium text-[#d74b56]">Email :</span>{' '}
+                  <span className="font-medium text-[#d74b56]">Email :</span>{" "}
                   <a
                     href={`mailto:${profile.email}`}
                     className="transition hover:text-[#1a1a1a] hover:underline"
@@ -112,7 +115,7 @@ function ManagementTeamSection() {
         </div>
       </div>
     </section>
-  )
+  );
 }
 
-export default ManagementTeamSection
+export default ManagementTeamSection;

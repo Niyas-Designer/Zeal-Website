@@ -34,7 +34,7 @@ const growthStats = [
 const journeyPoints = [
   {
     year: '2006',
-    title: 'Business operations established in Tirupur',
+    title: 'Business operations established in Tiruppur',
   },
   {
     year: 'Design Studio Built',
@@ -171,7 +171,7 @@ function AboutZealPage() {
                 Building a complete fashion future. From India. For the world.
               </h2>
               <p className="mt-6 text-[1rem] leading-8 text-[#4f4f49]">
-                Founded in Tirupur, ZEAL has grown into a multi-dimensional
+                Founded in Tiruppur, ZEAL has grown into a multi-dimensional
                 apparel business serving both domestic and international markets.
                 What began as a manufacturing-driven company has evolved into a
                 complete ecosystem that includes design development, scalable

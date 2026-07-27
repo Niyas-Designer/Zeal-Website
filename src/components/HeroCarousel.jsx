@@ -1,4 +1,4 @@
-import { startTransition, useEffect, useEffectEvent, useState } from 'react'
+import { useCallback, useEffect, useState } from 'react'
 
 const slides = [
   {
@@ -19,7 +19,7 @@ const slides = [
     id: 3,
     title: ['Fashion Meets', 'Digital Warehouse.'],
     description:
-      'Connecting manufacturers and warehouses through a pöwerful platform built for modern fashion distributiön.',
+      'Connecting manufacturers and warehouses through a powerful platform built for modern fashion distribution.',
     image: '/Banner%203.jpg',
   },
 ]
@@ -27,19 +27,17 @@ const slides = [
 function HeroCarousel() {
   const [activeIndex, setActiveIndex] = useState(0)
 
-  const changeSlide = useEffectEvent((direction) => {
-    startTransition(() => {
-      setActiveIndex((currentIndex) => {
-        const nextIndex = currentIndex + direction
+  const changeSlide = useCallback((direction) => {
+    setActiveIndex((currentIndex) => {
+      const nextIndex = currentIndex + direction
 
-        if (nextIndex < 0) {
-          return slides.length - 1
-        }
+      if (nextIndex < 0) {
+        return slides.length - 1
+      }
 
-        return nextIndex % slides.length
-      })
+      return nextIndex % slides.length
     })
-  })
+  }, [])
 
   useEffect(() => {
     const intervalId = window.setInterval(() => {
@@ -47,7 +45,7 @@ function HeroCarousel() {
     }, 6500)
 
     return () => window.clearInterval(intervalId)
-  }, [])
+  }, [changeSlide])
 
   return (
     <section className="relative isolate flex min-h-[82vh] w-full overflow-hidden bg-[#1f1913] text-white md:min-h-[86vh]">
@@ -69,6 +67,7 @@ function HeroCarousel() {
               }`}
               style={{ backgroundImage: `url(${slide.image})` }}
             />
+
             <div className="absolute inset-0 bg-gradient-to-r from-[#14110d]/88 via-[#14110d]/54 to-[#14110d]/20" />
           </div>
         )
@@ -107,22 +106,6 @@ function HeroCarousel() {
               >
                 {slides[activeIndex].description}
               </p>
-
-              <div
-                className="translate-y-6 opacity-0"
-                style={{
-                  animation: 'hero-copy-in 800ms ease-out forwards',
-                  animationDelay: '560ms',
-                }}
-              >
-                {/* <button
-                  type="button"
-                  className="inline-flex items-center gap-3 bg-white px-6 py-3 text-sm font-semibold tracking-[0.08em] text-black transition-transform duration-300 hover:-translate-y-0.5"
-                >
-                  Know More
-                  <span aria-hidden="true">&rarr;</span>
-                </button> */}
-              </div>
             </div>
           </div>
         </div>
@@ -136,6 +119,7 @@ function HeroCarousel() {
           >
             <span aria-hidden="true">&larr;</span>
           </button>
+
           <button
             type="button"
             aria-label="Next slide"
