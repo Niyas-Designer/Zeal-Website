@@ -28,9 +28,9 @@ const brandProfiles = [
     copy:
       "ARDEUR brings casualwear into a sharper space with graphic tees, relaxed fits, and wardrobe staples built for confident daily style.",
     images: [
-      "/optimized/Product%20images/Ardeur/0W2A9686.jpg",
-      "/optimized/Product%20images/Ardeur/0W2A9720.jpg",
-      "/optimized/Product%20images/Ardeur/0W2A9812.jpg",
+      "/Product%20images/Ardeur/0W2A9686.webp",
+      "/Product%20images/Ardeur/0W2A9720.webp",
+      "/Product%20images/Ardeur/0W2A9812.webp",
     ],
   },
   {
@@ -44,9 +44,9 @@ const brandProfiles = [
     copy:
       "The Zeal In You line focuses on movement, flexibility, and easy active styling for customers who live between training, travel, and everyday comfort.",
     images: [
-      "/optimized/Product%20images/Ardeur/0W2A0032.jpg",
-      "/optimized/Product%20images/Ardeur/0W2A0052.jpg",
-      "/optimized/Product%20images/Ardeur/0W2A0066.jpg",
+      "/Product%20images/Ardeur/0W2A0032.webp",
+      "/Product%20images/Ardeur/0W2A0052.webp",
+      "/Product%20images/Ardeur/0W2A0066.webp",
     ],
   },
   {
@@ -60,9 +60,9 @@ const brandProfiles = [
     copy:
       "CODEZ is designed for kids with energy: graphic tees, easy joggers, soft co-ords, and practical silhouettes made for real play.",
     images: [
-      "/optimized/Product%20images/Codez/1.jpg",
-      "/optimized/Product%20images/Codez/24.jpg",
-      "/optimized/Product%20images/Codez/48.jpg",
+      "/Product%20images/Codez/1.webp",
+      "/Product%20images/Codez/24.webp",
+      "/Product%20images/Codez/48.webp",
     ],
   },
   {
@@ -76,9 +76,9 @@ const brandProfiles = [
     copy:
       "FERVORO blends refined polo styling with strong outdoor campaign language, creating a confident menswear identity for elevated casual dressing.",
     images: [
-      "/optimized/Product%20images/Fervoro/1.jpg",
-      "/optimized/Product%20images/Fervoro/8.jpg",
-      "/optimized/Product%20images/Fervoro/14.jpg",
+      "/Product%20images/Fervoro/1.webp",
+      "/Product%20images/Fervoro/8.webp",
+      "/Product%20images/Fervoro/14.webp",
     ],
   },
   {
@@ -92,9 +92,9 @@ const brandProfiles = [
     copy:
       "FERVORO ITALY extends the brand language into polished styling, strong collar stories, and premium casualwear with a European-inspired finish.",
     images: [
-      "/optimized/Product%20images/Fervoro/3.jpg",
-      "/optimized/Product%20images/Fervoro/10.jpg",
-      "/optimized/Product%20images/Fervoro/20.jpg",
+      "/Product%20images/Fervoro/3.webp",
+      "/Product%20images/Fervoro/10.webp",
+      "/Product%20images/Fervoro/20.webp",
     ],
   },
   {
@@ -108,9 +108,9 @@ const brandProfiles = [
     copy:
       "ARDEUR STREET brings washed finishes, strong graphics, and expressive attitude into a youth-focused streetwear line.",
     images: [
-      "/optimized/Product%20images/Acid%20wash/1.jpg",
-      "/optimized/Product%20images/Acid%20wash/4.jpg",
-      "/optimized/Product%20images/Acid%20wash/8.jpg",
+      "/Product%20images/Acid%20wash/1.webp",
+      "/Product%20images/Acid%20wash/4.webp",
+      "/Product%20images/Acid%20wash/8.webp",
     ],
   },
   {
@@ -124,9 +124,9 @@ const brandProfiles = [
     copy:
       "REVISITED turns familiar fashion references into fresh essentials with updated fits, bold edits, and easy urban comfort.",
     images: [
-      "/optimized/Product%20images/Revisited/1.jpg",
-      "/optimized/Product%20images/Revisited/4.jpg",
-      "/optimized/Product%20images/Revisited/7.jpg",
+      "/Product%20images/Revisited/1.webp",
+      "/Product%20images/Revisited/4.webp",
+      "/Product%20images/Revisited/7.webp",
     ],
   },
 ];
