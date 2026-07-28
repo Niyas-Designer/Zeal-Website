@@ -2,113 +2,296 @@ import { useCallback, useEffect, useMemo, useState } from 'react'
 
 const collectionBanners = [
   {
-    id: 'new-arrivals',
-    eyebrow: 'Fresh From The Studio',
-    title: 'New Arrivals',
-    subtitle: 'New Collection',
-    description:
-      'Discover newly developed silhouettes, updated colours, refined details and fresh seasonal directions.',
-    image:
-      'https://loremflickr.com/1920/1080/fashion,new-collection,models?lock=501',
-    fallback:
-      'https://picsum.photos/seed/zeal-new-arrivals/1920/1080',
-    position: 'object-center',
-  },
-  {
-    id: 'men-boys',
-    eyebrow: 'Modern Everyday Dressing',
-    title: 'Men & Boys',
+    id: 'ardeur',
+    eyebrow: 'Original Product Photography',
+    title: 'Ardeur',
     subtitle: 'Collection',
     description:
-      'Smart casuals, elevated essentials, coordinated sets and versatile styles developed for modern wardrobes.',
-    image:
-      'https://loremflickr.com/1920/1080/mens-fashion,boys-fashion,apparel?lock=502',
-    fallback:
-      'https://picsum.photos/seed/zeal-men-boys/1920/1080',
-    position: 'object-center',
+      'Statement fashion pieces photographed from ZEAL original product collections.',
+    banner: 'ardeur-own-the-vibe.jpeg',
+    folder: 'Ardeur',
+    cover: '0W2A9686.JPG',
+    images: [
+      '0A0A0743.png',
+      '0A0A0756.JPG',
+      '0A0A9626.JPG',
+      '0A0A9635.JPG',
+      '0W2A0022.JPG',
+      '0W2A0032.JPG',
+      '0W2A0052.JPG',
+      '0W2A0066.JPG',
+      '0W2A9656.JPG',
+      '0W2A9668.JPG',
+      '0W2A9677.JPG',
+      '0W2A9686.JPG',
+      '0W2A9697.JPG',
+      '0W2A9707.JPG',
+      '0W2A9720.JPG',
+      '0W2A9730.JPG',
+      '0W2A9746.JPG',
+      '0W2A9755.JPG',
+      '0W2A9767.JPG',
+      '0W2A9773.JPG',
+      '0W2A9789.JPG',
+      '0W2A9798.JPG',
+      '0W2A9812.JPG',
+      '0W2A9823.JPG',
+      '0W2A9837.JPG',
+      '0W2A9838.JPG',
+      '0W2A9859.JPG',
+      '0W2A9868.JPG',
+      '0W2A9881.JPG',
+      '0W2A9890.JPG',
+      '0W2A9899.JPG',
+      '0W2A9910.JPG',
+      '0W2A9922.JPG',
+      '0W2A9932.JPG',
+      '0W2A9945.JPG',
+      '0W2A9968.JPG',
+      '0W2A9983.JPG',
+      '0W2A9987.JPG',
+    ],
   },
   {
-    id: 'women-girls',
-    eyebrow: 'Contemporary Style Stories',
-    title: 'Women & Girls',
+    id: 'codez',
+    eyebrow: 'Original Product Photography',
+    title: 'Codez',
     subtitle: 'Collection',
     description:
-      'Comfort-led silhouettes, expressive colour stories and versatile fashion designed for everyday movement.',
-    image:
-      'https://loremflickr.com/1920/1080/womens-fashion,girls-fashion,clothing?lock=503',
-    fallback:
-      'https://picsum.photos/seed/zeal-women-girls/1920/1080',
-    position: 'object-center',
+      'A broad catalogue of ZEAL product looks, colours, silhouettes and coordinated styles.',
+    banner: 'codez-kids.jpeg',
+    folder: 'Codez',
+    cover: '48.jpg',
+    images: [
+      '1.jpg',
+      '2.jpg',
+      '3.jpg',
+      '4.jpg',
+      '5.jpg',
+      '6.jpg',
+      '7.jpg',
+      '8.jpg',
+      '9.jpg',
+      '10.jpg',
+      '11.jpg',
+      '12.png',
+      '13.png',
+      '14.png',
+      '15.png',
+      '16.png',
+      '17.png',
+      '18.png',
+      '19.jpg',
+      '20.png',
+      '21.jpg',
+      '22.png',
+      '23.png',
+      '24.jpg',
+      '25.jpg',
+      '26.jpg',
+      '27.jpg',
+      '28.jpg',
+      '29.jpg',
+      '30.jpg',
+      '31.jpg',
+      '32.jpg',
+      '33.jpg',
+      '34.jpg',
+      '35.jpg',
+      '36.jpg',
+      '37.jpg',
+      '38.jpg',
+      '39.jpg',
+      '40.jpg',
+      '41.jpg',
+      '42.jpg',
+      '43.jpg',
+      '44.jpg',
+      '45.jpg',
+      '46.jpg',
+      '47.jpg',
+      '48.jpg',
+      '49.jpg',
+      '50.jpg',
+      '51.jpg',
+      '52.jpg',
+      '53.jpg',
+      '54.jpg',
+      '55.jpg',
+      '56.jpg',
+      '57.jpg',
+      '58.jpg',
+      '59.jpg',
+      '60.jpg',
+      '61.jpg',
+      '62.jpg',
+      '63.jpg',
+      '64.jpg',
+      '65.png',
+    ],
+  },
+  {
+    id: 'fervoro',
+    eyebrow: 'Original Product Photography',
+    title: 'Fervoro',
+    subtitle: 'Collection',
+    description:
+      'Premium product visuals highlighting refined styling, fit and seasonal detailing.',
+    banner: 'fervoro.png',
+    folder: 'Fervoro',
+    cover: '8.JPG',
+    images: [
+      '1.JPG',
+      '2.JPG',
+      '3.JPG',
+      '4.JPG',
+      '5.JPG',
+      '6.JPG',
+      '7.JPG',
+      '8.JPG',
+      '9.JPG',
+      '10.JPG',
+      '11.JPG',
+      '12.JPG',
+      '13.JPG',
+      '14.JPG',
+      '15.JPG',
+      '16.JPG',
+      '17.JPG',
+      '18.JPG',
+      '19.JPG',
+      '20.JPG',
+    ],
+  },
+  {
+    id: 'girls-womens',
+    eyebrow: 'Original Product Photography',
+    title: 'Girls & Womens',
+    subtitle: 'Collection',
+    description:
+      'Comfort-led silhouettes, expressive colour stories and versatile fashion for women and girls.',
+    banner: 'girls-and-womens.jpg',
+    folder: 'Girls and Womens',
+    cover: '4.jpg',
+    images: [
+      '1.jpg',
+      '2.jpg',
+      '3.jpg',
+      '4.jpg',
+      '5.jpg',
+      '6.jpg',
+      '7.jpg',
+      '8.jpg',
+      '9.jpg',
+      '10.jpg',
+      '11.jpg',
+      '12.jpg',
+      '13.jpg',
+      '14.jpg',
+      '15.jpg',
+      '16.jpg',
+      '17.jpg',
+      '18.jpg',
+      '19.jpg',
+      '20.jpg',
+      '21.jpg',
+    ],
   },
   {
     id: 'infants',
-    eyebrow: 'Little Moments',
-    title: 'Infant Boys & Girls',
+    eyebrow: 'Original Product Photography',
+    title: 'Infants',
     subtitle: 'Collection',
     description:
       'Soft constructions, gentle fabrics, playful details and easy silhouettes created for early adventures.',
-    image:
-      'https://loremflickr.com/1920/1080/baby-fashion,infant-clothing,kids?lock=504',
-    fallback:
-      'https://picsum.photos/seed/zeal-infants/1920/1080',
-    position: 'object-center',
+    banner: 'infants.png',
+    folder: 'infants',
+    cover: '1.jpg',
+    images: [
+      '1.jpg',
+      '2.jpg',
+      '3.jpeg',
+      '4.jpeg',
+      '5.jpeg',
+      '6.jpeg',
+      '7.jpeg',
+      '8.jpeg',
+      '9.jpeg',
+      '10.jpg',
+      '11.jpeg',
+      '12.jpeg',
+    ],
   },
   {
-    id: 'travel-wear',
-    eyebrow: 'Designed To Move',
-    title: 'Travel Wear',
+    id: 'acid-wash',
+    eyebrow: 'Original Product Photography',
+    title: 'Acid Wash',
     subtitle: 'Collection',
     description:
-      'Lightweight layers, relaxed coordinates and practical comfort designed for journeys, leisure and movement.',
-    image:
-      'https://loremflickr.com/1920/1080/travel-fashion,leisurewear,airport-style?lock=505',
-    fallback:
-      'https://picsum.photos/seed/zeal-travel-wear/1920/1080',
-    position: 'object-center',
+      'Washed finishes and relaxed product styling from ZEAL original photography.',
+    banner: 'acid-wash.png',
+    folder: 'Acid wash',
+    cover: '1.png',
+    images: [
+      '1.png',
+      '2.png',
+      '3.png',
+      '4.png',
+      '5.png',
+      '6.png',
+      '7.png',
+      '8.png',
+      '9.png',
+      '10.png',
+    ],
+  },
+  {
+    id: 'revisited',
+    eyebrow: 'Original Product Photography',
+    title: 'Revisited',
+    subtitle: 'Collection',
+    description:
+      'A focused edit of refreshed looks and original ZEAL product imagery.',
+    banner: 'revisited.png',
+    folder: 'Revisited',
+    cover: '3.JPG',
+    images: ['1.JPG', '2.JPG', '3.JPG', '4.JPG', '5.JPG', '6.JPG', '7.JPG'],
   },
 ]
 
+const heroBanners = Array.from({ length: 8 }, (_, index) => ({
+  id: `banner-${index + 1}`,
+  file: `Banner ${index + 1}.jpg`,
+  alt: `ZEAL product hero banner ${index + 1}`,
+}))
+
 const filters = [
-  { id: 'all', label: 'All Collections', query: 'fashion' },
-  { id: 'new-arrivals', label: 'New Arrivals', query: 'new-fashion' },
-  { id: 'men-boys', label: 'Men & Boys', query: 'menswear' },
-  { id: 'women-girls', label: 'Women & Girls', query: 'womenswear' },
-  { id: 'infants', label: 'Infants', query: 'baby-clothing' },
-  { id: 'travel-wear', label: 'Travel Wear', query: 'travel-wear' },
+  { id: 'all', label: 'All Collections' },
+  ...collectionBanners.map((collection) => ({
+    id: collection.id,
+    label: collection.title,
+  })),
 ]
 
-const galleryHeights = [1180, 860, 1020, 1320, 760, 1100, 940, 1240, 820, 1060]
-const galleryRatios = [
-  '4 / 5',
-  '3 / 4',
-  '1 / 1',
-  '4 / 6',
-  '5 / 7',
-  '4 / 3',
-  '7 / 9',
-  '3 / 5',
-]
+const productImagePath = (folder, file) =>
+  `/Product%20images/${encodeURIComponent(folder)}/${encodeURIComponent(file)}`
 
-const galleryItems = Array.from({ length: 100 }, (_, index) => {
-  const category = filters[(index % (filters.length - 1)) + 1]
-  const itemNumber = index + 1
-  const height = galleryHeights[index % galleryHeights.length]
+const bannerImagePath = (file) =>
+  `/Product%20banners/${encodeURIComponent(file)}`
 
-  return {
-    id: itemNumber,
-    category: category.id,
-    categoryLabel: category.label,
-    ratio: galleryRatios[index % galleryRatios.length],
-    image: `https://loremflickr.com/900/${height}/fashion,clothing,model,${category.query}?lock=${
-      itemNumber + 700
-    }`,
-    fallback: `https://picsum.photos/seed/zeal-look-${itemNumber}/900/${height}`,
-    alt: `${category.label} fashion reference ${String(itemNumber).padStart(
-      3,
+const galleryItems = collectionBanners.flatMap((collection) =>
+  collection.images.map((file, index) => ({
+    id: `${collection.id}-${file}`,
+    category: collection.id,
+    categoryLabel: collection.title,
+    lookNumber: index + 1,
+    image: productImagePath(collection.folder, file),
+    alt: `${collection.title} product image ${String(index + 1).padStart(
+      2,
       '0',
     )}`,
-  }
-})
+  })),
+)
 
 function ArrowIcon({ direction = 'right' }) {
   return (
@@ -118,7 +301,7 @@ function ArrowIcon({ direction = 'right' }) {
       className={`h-5 w-5 ${direction === 'left' ? 'rotate-180' : ''}`}
       fill="none"
       stroke="currentColor"
-      strokeWidth="1.7"
+      strokeWidth="1.8"
     >
       <path d="M5 12h14M13 6l6 6-6 6" />
     </svg>
@@ -134,10 +317,10 @@ function ProductShopPage() {
       const nextBanner = currentBanner + direction
 
       if (nextBanner < 0) {
-        return collectionBanners.length - 1
+        return heroBanners.length - 1
       }
 
-      return nextBanner % collectionBanners.length
+      return nextBanner % heroBanners.length
     })
   }, [])
 
@@ -157,118 +340,52 @@ function ProductShopPage() {
     return galleryItems.filter((item) => item.category === activeFilter)
   }, [activeFilter])
 
-  const currentBanner = collectionBanners[activeBanner]
-
-  const exploreBanner = () => {
-    setActiveFilter(currentBanner.id)
-
-    window.requestAnimationFrame(() => {
-      document
-        .getElementById('shop-gallery')
-        ?.scrollIntoView({ behavior: 'smooth', block: 'start' })
-    })
-  }
-
   return (
     <main className="min-h-screen bg-white text-[#171717]">
       <section
-        className="relative isolate min-h-[620px] overflow-hidden bg-[#171717] sm:min-h-[700px] lg:min-h-[calc(100vh-80px)]"
-        aria-label="ZEAL product collections"
+        className="relative isolate overflow-hidden bg-[#111111]"
+        aria-label="ZEAL product collection hero banner"
       >
-        {collectionBanners.map((banner, index) => {
-          const isActive = index === activeBanner
+        <div className="relative aspect-[1900/850] w-full bg-[#111111]">
+          {heroBanners.map((banner, index) => {
+            const isActive = index === activeBanner
 
-          return (
-            <div
-              key={banner.id}
-              className={`absolute inset-0 transition-all duration-1000 ease-out ${
-                isActive
-                  ? 'visible scale-100 opacity-100'
-                  : 'invisible scale-[1.03] opacity-0'
-              }`}
-            >
-              <img
-                src={banner.image}
-                alt={`${banner.title} ${banner.subtitle}`}
-                className={`h-full w-full object-cover ${banner.position}`}
-                loading={index === 0 ? 'eager' : 'lazy'}
-                onError={(event) => {
-                  event.currentTarget.onerror = null
-                  event.currentTarget.src = banner.fallback
-                }}
-              />
+            return (
+              <div
+                key={banner.id}
+                className={`absolute inset-0 transition-all duration-1000 ease-out ${
+                  isActive
+                    ? 'visible scale-100 opacity-100'
+                    : 'invisible scale-[1.01] opacity-0'
+                }`}
+              >
+                <img
+                  src={bannerImagePath(banner.file)}
+                  alt={banner.alt}
+                  className="h-full w-full object-contain object-center"
+                  loading={index === 0 ? 'eager' : 'lazy'}
+                />
+              </div>
+            )
+          })}
 
-              <div className="absolute inset-0 bg-gradient-to-r from-black/74 via-black/30 to-black/10" />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/38 via-transparent to-black/12" />
-            </div>
-          )
-        })}
-
-        <div className="relative z-10 mx-auto flex min-h-[620px] max-w-[1580px] items-end px-6 pb-24 pt-20 sm:min-h-[700px] sm:px-8 sm:pb-28 lg:min-h-[calc(100vh-80px)] lg:px-10 lg:pb-24">
-          <div
-            key={currentBanner.id}
-            className="max-w-4xl text-white"
-          >
-            <p className="text-xs font-semibold uppercase tracking-[0.3em] text-white/75 sm:text-sm">
-              {currentBanner.eyebrow}
-            </p>
-
-            <h1 className="mt-5 text-[clamp(3rem,8vw,7.6rem)] font-semibold leading-[0.86] tracking-[-0.06em]">
-              {currentBanner.title}
-              <span className="mt-2 block font-normal italic text-white/88">
-                {currentBanner.subtitle}
-              </span>
-            </h1>
-
-            <p className="mt-7 max-w-2xl text-sm leading-7 text-white/78 sm:text-base sm:leading-8">
-              {currentBanner.description}
-            </p>
-
-            <button
-              type="button"
-              onClick={exploreBanner}
-              className="mt-8 inline-flex h-12 items-center justify-center gap-3 bg-white px-7 text-sm font-semibold uppercase tracking-[0.12em] text-[#171717] transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#db3627] hover:text-white"
-            >
-              Explore Collection
-              <ArrowIcon />
-            </button>
-          </div>
-        </div>
-
-        <div className="absolute bottom-7 right-6 z-20 flex items-center gap-3 sm:right-8 lg:right-10">
           <button
             type="button"
-            aria-label="Previous collection banner"
+            aria-label="Previous hero banner"
             onClick={() => changeBanner(-1)}
-            className="flex h-12 w-12 items-center justify-center border border-white/40 bg-black/20 text-white backdrop-blur-sm transition-colors duration-300 hover:bg-white hover:text-[#171717]"
+            className="absolute left-3 top-1/2 z-20 flex h-10 w-10 -translate-y-1/2 items-center justify-center border border-white/55 bg-black/25 text-white backdrop-blur-sm transition-colors duration-300 hover:bg-white hover:text-[#171717] sm:left-5 sm:h-12 sm:w-12"
           >
             <ArrowIcon direction="left" />
           </button>
 
           <button
             type="button"
-            aria-label="Next collection banner"
+            aria-label="Next hero banner"
             onClick={() => changeBanner(1)}
-            className="flex h-12 w-12 items-center justify-center border border-white/40 bg-black/20 text-white backdrop-blur-sm transition-colors duration-300 hover:bg-white hover:text-[#171717]"
+            className="absolute right-3 top-1/2 z-20 flex h-10 w-10 -translate-y-1/2 items-center justify-center border border-white/55 bg-black/25 text-white backdrop-blur-sm transition-colors duration-300 hover:bg-white hover:text-[#171717] sm:right-5 sm:h-12 sm:w-12"
           >
             <ArrowIcon />
           </button>
-        </div>
-
-        <div className="absolute bottom-9 left-6 z-20 hidden items-center gap-3 sm:left-8 sm:flex lg:left-10">
-          {collectionBanners.map((banner, index) => (
-            <button
-              key={banner.id}
-              type="button"
-              aria-label={`Show ${banner.title} banner`}
-              onClick={() => setActiveBanner(index)}
-              className={`h-[3px] transition-all duration-300 ${
-                activeBanner === index
-                  ? 'w-14 bg-white'
-                  : 'w-7 bg-white/40 hover:bg-white/75'
-              }`}
-            />
-          ))}
         </div>
       </section>
 
@@ -286,9 +403,8 @@ function ProductShopPage() {
                 Explore the collection.
               </h2>
               <p className="mt-4 max-w-2xl text-sm leading-7 text-[#6b655f] sm:text-base">
-                A flexible visual catalogue for ZEAL product categories. The
-                temporary images can later be replaced with your original
-                product photography without changing this layout.
+                A visual catalogue using ZEAL original product photography from
+                the organised collection folders.
               </p>
             </div>
 
@@ -328,13 +444,8 @@ function ProductShopPage() {
                   src={item.image}
                   alt={item.alt}
                   className="block w-full object-cover transition-transform duration-700 group-hover:scale-[1.025]"
-                  style={{ aspectRatio: item.ratio }}
                   loading="lazy"
                   decoding="async"
-                  onError={(event) => {
-                    event.currentTarget.onerror = null
-                    event.currentTarget.src = item.fallback
-                  }}
                 />
 
                 <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/55 via-transparent to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
@@ -344,7 +455,7 @@ function ProductShopPage() {
                     {item.categoryLabel}
                   </p>
                   <p className="mt-1 text-sm font-medium sm:text-base">
-                    Look {String(item.id).padStart(3, '0')}
+                    Look {String(item.lookNumber).padStart(2, '0')}
                   </p>
                 </div>
               </article>

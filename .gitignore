@@ -12,11 +12,15 @@ dist
 dist-ssr
 *.local
 
+# Local source archives are too large for the GitHub repository.
+public/*.zip
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
 .idea
 .DS_Store
+Thumbs.db
 *.suo
 *.ntvs*
 *.njsproj

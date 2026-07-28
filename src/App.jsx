@@ -22,13 +22,6 @@ import WorkWithUsPage from "./components/WorkWithUsPage";
 
 const informationPages = [
   {
-    path: "/our-brand",
-    eyebrow: "Our Brands",
-    title: "Fashion brands created for distinct markets and consumer needs.",
-    description:
-      "Explore ZEAL’s growing portfolio of in-house brands, product categories, market positioning, and retail-focused fashion concepts.",
-  },
-  {
     path: "/csr",
     eyebrow: "CSR",
     title: "Communicate impact through clear sustainability narratives.",
@@ -135,6 +128,11 @@ function App() {
         <Route path="/design-studio" element={<DesignStudioPage />} />
 
         <Route path="/products" element={<ProductShopPage />} />
+
+        <Route
+          path="/our-brand"
+          element={<BrandPartnersSection variant="page" />}
+        />
 
         <Route path="/why-zeal" element={<WhyZealPage />} />
 
