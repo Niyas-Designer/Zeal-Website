@@ -5,43 +5,37 @@ const serviceCards = [
     title: "Lead Team",
     description:
       "Our experienced leadership team coordinates design, sourcing, production, and fulfilment through one connected system. This ensures better visibility, faster decisions, and dependable execution from order planning to final delivery.",
-    image:
-      "https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=1600",
+    image: "/Service%20images/lead-team.png",
   },
   {
     title: "Competitive Pricing",
     description:
       "We support customers with commercially balanced sourcing and cost-conscious planning. Through efficient development, vendor alignment, and manufacturing discipline, we help create value without compromising quality.",
-    image:
-      "https://images.pexels.com/photos/4386321/pexels-photo-4386321.jpeg?auto=compress&cs=tinysrgb&w=1600",
+    image: "/Service%20images/competitive-pricing.png",
   },
   {
     title: "Compliance",
     description:
       "We work with responsible systems, ethical manufacturing practices, and structured operating standards. Our focus is to maintain safe, reliable, and globally aligned processes across key production functions.",
-    image:
-      "https://images.pexels.com/photos/8867434/pexels-photo-8867434.jpeg?auto=compress&cs=tinysrgb&w=1600",
+    image: "/Service%20images/compliance.png",
   },
   {
     title: "Quality Assurance",
     description:
       "Quality is monitored at every stage, from raw material evaluation to production checks and final inspection. Our process is built to reduce inconsistency, improve reliability, and support buyer confidence.",
-    image:
-      "https://images.pexels.com/photos/6195126/pexels-photo-6195126.jpeg?auto=compress&cs=tinysrgb&w=1600",
+    image: "/Service%20images/quality-assurance.png",
   },
   {
     title: "Latest Fashion",
     description:
       "We stay connected to evolving market movements, silhouettes, materials, and seasonal preferences. This helps us develop collections that are both trend-aware and commercially suitable for global and domestic markets.",
-    image:
-      "https://images.pexels.com/photos/5698851/pexels-photo-5698851.jpeg?auto=compress&cs=tinysrgb&w=1600",
+    image: "/Service%20images/latest-fashion.png",
   },
   {
     title: "Risk Management",
     description:
       "We aim to reduce uncertainty through structured planning, communication, and operational control. By aligning sourcing, production, and timelines carefully, we help projects move forward with greater confidence.",
-    image:
-      "https://images.pexels.com/photos/7688336/pexels-photo-7688336.jpeg?auto=compress&cs=tinysrgb&w=1600",
+    image: "/Service%20images/risk-management.png",
   },
 ];
 
@@ -55,10 +49,10 @@ const highlightPoints = [
 ];
 
 const showcaseImages = [
-  "https://images.pexels.com/photos/6311392/pexels-photo-6311392.jpeg?auto=compress&cs=tinysrgb&w=1600",
-  "https://images.pexels.com/photos/6766293/pexels-photo-6766293.jpeg?auto=compress&cs=tinysrgb&w=1600",
-  "https://images.pexels.com/photos/7679720/pexels-photo-7679720.jpeg?auto=compress&cs=tinysrgb&w=1600",
-  "https://images.pexels.com/photos/6765028/pexels-photo-6765028.jpeg?auto=compress&cs=tinysrgb&w=1600",
+  "/Service%20images/latest-fashion.png",
+  "/Service%20images/quality-assurance.png",
+  "/Service%20images/competitive-pricing.png",
+  "/Service%20images/risk-management.png",
 ];
 
 function ServicesPage() {
@@ -117,7 +111,7 @@ function ServicesPage() {
 
             <div className="overflow-hidden rounded-[2rem] border border-[#e6e1db] bg-white shadow-[0_24px_70px_rgba(17,17,17,0.08)]">
               <img
-                src="https://images.pexels.com/photos/6069112/pexels-photo-6069112.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                src="/Service%20images/services-hero.png"
                 alt="ZEAL services overview"
                 className="h-[280px] w-full object-cover sm:h-[360px] lg:h-[520px]"
                 loading="eager"
