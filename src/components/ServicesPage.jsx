@@ -5,37 +5,37 @@ const serviceCards = [
     title: "Lead Team",
     description:
       "Our experienced leadership team coordinates design, sourcing, production, and fulfilment through one connected system. This ensures better visibility, faster decisions, and dependable execution from order planning to final delivery.",
-    image: "/Service%20images/lead-team.png",
+    image: "/optimized/Service%20images/lead-team.jpg",
   },
   {
     title: "Competitive Pricing",
     description:
       "We support customers with commercially balanced sourcing and cost-conscious planning. Through efficient development, vendor alignment, and manufacturing discipline, we help create value without compromising quality.",
-    image: "/Service%20images/competitive-pricing.png",
+    image: "/optimized/Service%20images/competitive-pricing.jpg",
   },
   {
     title: "Compliance",
     description:
       "We work with responsible systems, ethical manufacturing practices, and structured operating standards. Our focus is to maintain safe, reliable, and globally aligned processes across key production functions.",
-    image: "/Service%20images/compliance.png",
+    image: "/optimized/Service%20images/compliance.jpg",
   },
   {
     title: "Quality Assurance",
     description:
       "Quality is monitored at every stage, from raw material evaluation to production checks and final inspection. Our process is built to reduce inconsistency, improve reliability, and support buyer confidence.",
-    image: "/Service%20images/quality-assurance.png",
+    image: "/optimized/Service%20images/quality-assurance.jpg",
   },
   {
     title: "Latest Fashion",
     description:
       "We stay connected to evolving market movements, silhouettes, materials, and seasonal preferences. This helps us develop collections that are both trend-aware and commercially suitable for global and domestic markets.",
-    image: "/Service%20images/latest-fashion.png",
+    image: "/optimized/Service%20images/latest-fashion.jpg",
   },
   {
     title: "Risk Management",
     description:
       "We aim to reduce uncertainty through structured planning, communication, and operational control. By aligning sourcing, production, and timelines carefully, we help projects move forward with greater confidence.",
-    image: "/Service%20images/risk-management.png",
+    image: "/optimized/Service%20images/risk-management.jpg",
   },
 ];
 
@@ -49,10 +49,10 @@ const highlightPoints = [
 ];
 
 const showcaseImages = [
-  "/Service%20images/latest-fashion.png",
-  "/Service%20images/quality-assurance.png",
-  "/Service%20images/competitive-pricing.png",
-  "/Service%20images/risk-management.png",
+  "/optimized/Service%20images/latest-fashion.jpg",
+  "/optimized/Service%20images/quality-assurance.jpg",
+  "/optimized/Service%20images/competitive-pricing.jpg",
+  "/optimized/Service%20images/risk-management.jpg",
 ];
 
 function ServicesPage() {
@@ -111,10 +111,12 @@ function ServicesPage() {
 
             <div className="overflow-hidden rounded-[2rem] border border-[#e6e1db] bg-white shadow-[0_24px_70px_rgba(17,17,17,0.08)]">
               <img
-                src="/Service%20images/services-hero.png"
+                src="/optimized/Service%20images/services-hero.jpg"
                 alt="ZEAL services overview"
                 className="h-[280px] w-full object-cover sm:h-[360px] lg:h-[520px]"
                 loading="eager"
+                decoding="sync"
+                fetchPriority="high"
               />
             </div>
           </div>
@@ -149,6 +151,7 @@ function ServicesPage() {
                     alt={service.title}
                     className="h-[240px] w-full object-cover transition-transform duration-700 group-hover:scale-105"
                     loading="lazy"
+                    decoding="async"
                   />
                 </div>
 
@@ -219,6 +222,7 @@ function ServicesPage() {
                     alt={`Service showcase ${index + 1}`}
                     className="h-[220px] w-full object-cover sm:h-[280px]"
                     loading="lazy"
+                    decoding="async"
                   />
                 </div>
               ))}

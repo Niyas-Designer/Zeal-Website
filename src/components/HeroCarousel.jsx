@@ -6,21 +6,21 @@ const slides = [
     title: ['Built on Precision.', 'Driven by Fashion.'],
     description:
       'A modern garment manufacturing company combining industry expertise, advanced production, and global fashion insight.',
-    image: '/Banner%201.jpg',
+    image: '/optimized/Banner%201.jpg',
   },
   {
     id: 2,
     title: ['Where Ideas Become', 'Apparel.'],
     description:
       'Our creative studio transforms concepts into trend-ready garments through innovation, design expertise, and market insight.',
-    image: '/Banner%202.jpg',
+    image: '/optimized/Banner%202.jpg',
   },
   {
     id: 3,
     title: ['Fashion Meets', 'Digital Warehouse.'],
     description:
       'Connecting manufacturers and warehouses through a powerful platform built for modern fashion distribution.',
-    image: '/Banner%203.jpg',
+    image: '/optimized/Banner%203.jpg',
   },
 ]
 
@@ -41,7 +41,9 @@ function HeroCarousel() {
 
   useEffect(() => {
     const intervalId = window.setInterval(() => {
-      changeSlide(1)
+      if (!document.hidden) {
+        changeSlide(1)
+      }
     }, 6500)
 
     return () => window.clearInterval(intervalId)
@@ -61,11 +63,16 @@ function HeroCarousel() {
                 : 'translate-x-8 opacity-0'
             }`}
           >
-            <div
-              className={`absolute inset-0 bg-cover bg-center transition-transform duration-[6500ms] ease-linear ${
+            <img
+              src={slide.image}
+              alt=""
+              className={`absolute inset-0 h-full w-full object-cover object-center transition-transform duration-[6500ms] ease-linear ${
                 isActive ? 'scale-105' : 'scale-100'
               }`}
-              style={{ backgroundImage: `url(${slide.image})` }}
+              loading={index === 0 ? 'eager' : 'lazy'}
+              decoding={index === 0 ? 'sync' : 'async'}
+              fetchPriority={index === 0 ? 'high' : 'low'}
+              aria-hidden="true"
             />
 
             <div className="absolute inset-0 bg-gradient-to-r from-[#14110d]/88 via-[#14110d]/54 to-[#14110d]/20" />

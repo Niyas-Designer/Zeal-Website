@@ -28,9 +28,9 @@ const brandProfiles = [
     copy:
       "ARDEUR brings casualwear into a sharper space with graphic tees, relaxed fits, and wardrobe staples built for confident daily style.",
     images: [
-      "/Product%20images/Ardeur/0W2A9686.JPG",
-      "/Product%20images/Ardeur/0W2A9720.JPG",
-      "/Product%20images/Ardeur/0W2A9812.JPG",
+      "/optimized/Product%20images/Ardeur/0W2A9686.jpg",
+      "/optimized/Product%20images/Ardeur/0W2A9720.jpg",
+      "/optimized/Product%20images/Ardeur/0W2A9812.jpg",
     ],
   },
   {
@@ -44,9 +44,9 @@ const brandProfiles = [
     copy:
       "The Zeal In You line focuses on movement, flexibility, and easy active styling for customers who live between training, travel, and everyday comfort.",
     images: [
-      "/Product%20images/Ardeur/0W2A0032.JPG",
-      "/Product%20images/Ardeur/0W2A0052.JPG",
-      "/Product%20images/Ardeur/0W2A0066.JPG",
+      "/optimized/Product%20images/Ardeur/0W2A0032.jpg",
+      "/optimized/Product%20images/Ardeur/0W2A0052.jpg",
+      "/optimized/Product%20images/Ardeur/0W2A0066.jpg",
     ],
   },
   {
@@ -60,9 +60,9 @@ const brandProfiles = [
     copy:
       "CODEZ is designed for kids with energy: graphic tees, easy joggers, soft co-ords, and practical silhouettes made for real play.",
     images: [
-      "/Product%20images/Codez/1.jpg",
-      "/Product%20images/Codez/24.jpg",
-      "/Product%20images/Codez/48.jpg",
+      "/optimized/Product%20images/Codez/1.jpg",
+      "/optimized/Product%20images/Codez/24.jpg",
+      "/optimized/Product%20images/Codez/48.jpg",
     ],
   },
   {
@@ -76,9 +76,9 @@ const brandProfiles = [
     copy:
       "FERVORO blends refined polo styling with strong outdoor campaign language, creating a confident menswear identity for elevated casual dressing.",
     images: [
-      "/Product%20images/Fervoro/1.JPG",
-      "/Product%20images/Fervoro/8.JPG",
-      "/Product%20images/Fervoro/14.JPG",
+      "/optimized/Product%20images/Fervoro/1.jpg",
+      "/optimized/Product%20images/Fervoro/8.jpg",
+      "/optimized/Product%20images/Fervoro/14.jpg",
     ],
   },
   {
@@ -92,9 +92,9 @@ const brandProfiles = [
     copy:
       "FERVORO ITALY extends the brand language into polished styling, strong collar stories, and premium casualwear with a European-inspired finish.",
     images: [
-      "/Product%20images/Fervoro/3.JPG",
-      "/Product%20images/Fervoro/10.JPG",
-      "/Product%20images/Fervoro/20.JPG",
+      "/optimized/Product%20images/Fervoro/3.jpg",
+      "/optimized/Product%20images/Fervoro/10.jpg",
+      "/optimized/Product%20images/Fervoro/20.jpg",
     ],
   },
   {
@@ -108,9 +108,9 @@ const brandProfiles = [
     copy:
       "ARDEUR STREET brings washed finishes, strong graphics, and expressive attitude into a youth-focused streetwear line.",
     images: [
-      "/Product%20images/Acid%20wash/1.png",
-      "/Product%20images/Acid%20wash/4.png",
-      "/Product%20images/Acid%20wash/8.png",
+      "/optimized/Product%20images/Acid%20wash/1.jpg",
+      "/optimized/Product%20images/Acid%20wash/4.jpg",
+      "/optimized/Product%20images/Acid%20wash/8.jpg",
     ],
   },
   {
@@ -124,15 +124,15 @@ const brandProfiles = [
     copy:
       "REVISITED turns familiar fashion references into fresh essentials with updated fits, bold edits, and easy urban comfort.",
     images: [
-      "/Product%20images/Revisited/1.JPG",
-      "/Product%20images/Revisited/4.JPG",
-      "/Product%20images/Revisited/7.JPG",
+      "/optimized/Product%20images/Revisited/1.jpg",
+      "/optimized/Product%20images/Revisited/4.jpg",
+      "/optimized/Product%20images/Revisited/7.jpg",
     ],
   },
 ];
 
 const logoPath = (file) => `/Brands%20Logos/${encodeURIComponent(file)}`;
-const bannerPath = (file) => `/Product%20banners/${encodeURIComponent(file)}`;
+const bannerPath = (file) => `/optimized/Product%20banners/${encodeURIComponent(file)}`;
 
 function ImageFrame({ src, alt, className = "", eager = false }) {
   return (
@@ -144,7 +144,8 @@ function ImageFrame({ src, alt, className = "", eager = false }) {
         alt={alt}
         className="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.025]"
         loading={eager ? "eager" : "lazy"}
-        decoding="async"
+        decoding={eager ? "sync" : "async"}
+        fetchPriority={eager ? "high" : "auto"}
       />
     </div>
   );

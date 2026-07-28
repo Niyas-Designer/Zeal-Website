@@ -3,7 +3,7 @@ const capabilities = [
     title: 'Design & Development',
     description:
       'Trend-driven design, concept creation, and product development led by an in-house team aligned with global market demands.',
-    image: '/Designing.jpg',
+    image: '/optimized/Designing.jpg',
     position: 'object-center',
     alt: 'Fashion sketching and design concept workspace',
   },
@@ -11,7 +11,7 @@ const capabilities = [
     title: 'Fabric & Knitting',
     description:
       'Advanced knitting capabilities with precision engineering, material control, and consistent fabric quality.',
-    image: '/Knitting.jpg',
+    image: '/optimized/Knitting.jpg',
     position: 'object-center',
     alt: 'Knitting machine with yarn threads in motion',
   },
@@ -19,7 +19,7 @@ const capabilities = [
     title: 'Processing & Finishing',
     description:
       'Dyeing, washing, and finishing processes executed with strict quality standards and attention to detail.',
-    image: '/Stats%20Banner.jpg',
+    image: '/optimized/Stats%20Banner.jpg',
     position: 'object-center',
     alt: 'Garment processing and production floor',
   },
@@ -27,7 +27,7 @@ const capabilities = [
     title: 'Final Production',
     description:
       'Scalable manufacturing with efficient workflows, quality control systems, and timely delivery aligned with global benchmarks.',
-    image: '/Garments.jpg',
+    image: '/optimized/Garments.jpg',
     position: 'object-center',
     alt: 'Finished garments on display with folded apparel',
   },
@@ -69,7 +69,8 @@ function CapabilityJourneySection() {
                   alt={capability.alt}
                   className={`h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.05] ${capability.position}`}
                   loading="lazy"
-                />
+                decoding="async"
+/>
                 <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(17,17,17,0.06),rgba(17,17,17,0.18))] transition-colors duration-300 group-hover:bg-[linear-gradient(180deg,rgba(17,17,17,0.08),rgba(17,17,17,0.28))]" />
                 <div className="absolute inset-x-0 bottom-0 bg-white/88 px-6 py-5 backdrop-blur-sm transition-all duration-300 group-hover:bg-white/92">
                   <h3 className="text-[1rem] font-semibold uppercase leading-tight tracking-[0.18em] text-[#181818] sm:text-[1.02rem]">

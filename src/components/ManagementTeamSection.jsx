@@ -2,21 +2,21 @@ const profiles = [
   {
     name: "P. Srinivasan",
     role: "Managing Director",
-    image: "/management-01.jpg",
+    image: "/optimized/management-01.jpg",
     position: "object-[center_top]",
     email: "srinivas@zealgroups.in",
   },
   {
     name: "Manzoor Ahmed Khan",
     role: "Managing Director",
-    image: "/management-02.jpg",
+    image: "/optimized/management-02.jpg",
     position: "object-[center_top]",
     email: "manzoor@zealgroups.in",
   },
   {
     name: "Abu Hassan",
     role: "Managing Director",
-    image: "/management-03.jpg",
+    image: "/optimized/management-03.jpg",
     position: "object-[center_top]",
     email: "hassan@zealgroups.in",
   },
@@ -38,7 +38,7 @@ function ManagementTeamSection() {
     <section className="relative overflow-hidden bg-[#f2f6fa] px-6 py-24 sm:px-8 sm:py-28 lg:px-10">
       <div
         className="pointer-events-none absolute inset-0 bg-cover bg-center opacity-[0.07]"
-        style={{ backgroundImage: "url('/Banner%201.jpg')" }}
+        style={{ backgroundImage: "url('/optimized/Banner%201.jpg')" }}
       />
       <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(180deg,rgba(255,255,255,0.94),rgba(242,246,250,0.98))]" />
 

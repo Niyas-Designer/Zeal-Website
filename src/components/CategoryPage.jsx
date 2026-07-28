@@ -3,13 +3,13 @@ import { Link } from 'react-router-dom'
 const categoryCards = {
   men: {
     title: "Men's Wear",
-    image: '/MENS%20IMG.jpg',
+    image: '/optimized/MENS%20IMG.jpg',
     position: 'object-center',
     alt: 'Male model in premium casual wear',
   },
   women: {
     title: "Women's Wear",
-    image: '/WOMENS%20IMG.jpg',
+    image: '/optimized/WOMENS%20IMG.jpg',
     position: 'object-center',
     alt: 'Female model in premium casual wear',
   },
@@ -18,7 +18,7 @@ const categoryCards = {
     title: 'KIDS',
     description:
       'Soft cotton sets, playful coordinates, and easy silhouettes for bright everyday moments.',
-    image: '/Kids%20Banner.jpg',
+    image: '/optimized/Kids%20Banner.jpg',
     position: 'object-[82%_center]',
     alt: 'Child in premium casual clothing holding a hat',
   },
@@ -27,7 +27,7 @@ const categoryCards = {
     title: 'INFANTS',
     description:
       'Comfort-first cotton styles, playful prints, and easy separates for cheerful early adventures.',
-    image: '/Infants%20Banner.jpg',
+    image: '/optimized/Infants%20Banner.jpg',
     position: 'object-[72%_center]',
     alt: 'Young children in soft-toned casual clothing',
   },
@@ -45,6 +45,7 @@ function PrimaryCategoryCard({ category, heightClass }) {
           alt={category.alt}
           className={`h-full w-full object-cover transition-transform duration-300 ease-out group-hover:scale-[1.03] ${category.position}`}
           loading="lazy"
+          decoding="async"
         />
 
         <div className="absolute inset-0 bg-gradient-to-t from-black/52 via-black/10 to-transparent transition-colors duration-300 group-hover:from-black/60 group-hover:via-black/14" />
@@ -75,6 +76,7 @@ function SupportingCategoryCard({ category }) {
           alt={category.alt}
           className={`h-full w-full object-cover transition-transform duration-300 ease-out group-hover:scale-[1.03] ${category.position}`}
           loading="lazy"
+          decoding="async"
         />
 
         <div className="absolute inset-0 bg-gradient-to-r from-black/58 via-black/18 to-transparent transition-colors duration-300 group-hover:from-black/66 group-hover:via-black/22" />

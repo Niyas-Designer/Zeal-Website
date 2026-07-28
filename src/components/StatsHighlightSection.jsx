@@ -51,7 +51,7 @@ function StatsHighlightSection() {
       <div
         className="absolute inset-0 scale-105 bg-cover bg-center blur-[2px] animate-[stats-bg-zoom_22s_ease-in-out_infinite_alternate]"
         style={{
-          backgroundImage: "url('/Stats%20Banner%202.jpg')",
+          backgroundImage: "url('/optimized/Stats%20Banner%202.jpg')",
         }}
       />
       <div className="absolute inset-0 bg-black/70" />

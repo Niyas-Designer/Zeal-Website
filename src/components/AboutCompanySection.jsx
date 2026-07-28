@@ -54,22 +54,24 @@ function AboutCompanySection() {
               <figure className="h-full overflow-hidden rounded-[2rem] bg-[#f4f1eb] shadow-[0_18px_40px_rgba(20,20,20,0.08)]">
                 <div className="h-full min-h-[260px]">
                   <img
-                    src="/About%201.jpg"
+                    src="/optimized/About%201.jpg"
                     alt="ZEAL design and product presentation studio"
                     className="h-full w-full object-cover object-center transition-transform duration-500 hover:scale-[1.03]"
                     loading="lazy"
-                  />
+                  decoding="async"
+/>
                 </div>
               </figure>
 
               <figure className="h-full overflow-hidden rounded-[2rem] bg-[#f4f1eb] shadow-[0_18px_40px_rgba(20,20,20,0.08)]">
                 <div className="h-full min-h-[260px]">
                   <img
-                    src="/About%203.jpg"
+                    src="/optimized/About%203.jpg"
                     alt="ZEAL operations and coordination environment"
                     className="h-full w-full object-cover object-center transition-transform duration-500 hover:scale-[1.03]"
                     loading="lazy"
-                  />
+                  decoding="async"
+/>
                 </div>
               </figure>
             </div>
@@ -83,7 +85,8 @@ function AboutCompanySection() {
                     alt="ZEAL workspace supporting product development"
                     className="h-full w-full object-cover object-center transition-transform duration-500 hover:scale-[1.03]"
                     loading="lazy"
-                  />
+                  decoding="async"
+/>
                 </div>
               </figure>
 
@@ -94,7 +97,8 @@ function AboutCompanySection() {
                     alt="ZEAL brand and customer experience environment"
                     className="h-full w-full object-cover object-center transition-transform duration-500 hover:scale-[1.03]"
                     loading="lazy"
-                  />
+                  decoding="async"
+/>
                 </div>
               </figure>
             </div>

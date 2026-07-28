@@ -303,11 +303,12 @@ function WorkWithUsPage() {
               aria-label="View ZEAL Creations on Google Maps"
             >
               <img
-                src="/Zeal-Location-Map.jpg"
+                src="/optimized/Zeal-Location-Map.jpg"
                 alt="ZEAL Creations location map in Tiruppur"
                 className="h-[260px] w-full object-cover object-center transition-transform duration-500 group-hover:scale-[1.03] sm:h-[320px]"
                 loading="lazy"
-              />
+              decoding="async"
+/>
 
               <div className="absolute inset-0 bg-black/0 transition duration-300 group-hover:bg-black/20" />
 

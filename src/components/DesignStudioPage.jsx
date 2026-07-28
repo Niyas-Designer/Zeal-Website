@@ -1,18 +1,12 @@
 import { Link } from 'react-router-dom'
 
 const studioImages = {
-  hero:
-    'https://images.pexels.com/photos/9850077/pexels-photo-9850077.jpeg?cs=srgb&dl=pexels-ron-lach-9850077.jpg&fm=jpg',
-  collaboration:
-    'https://images.pexels.com/photos/37425741/pexels-photo-37425741.jpeg?cs=srgb&dl=pexels-wolfart-37425741.jpg&fm=jpg',
-  sketches:
-    'https://images.pexels.com/photos/7147453/pexels-photo-7147453.jpeg?cs=srgb&dl=pexels-michael-burrows-7147453.jpg&fm=jpg',
-  desk:
-    'https://images.pexels.com/photos/7256865/pexels-photo-7256865.jpeg?cs=srgb&dl=pexels-anete-lusina-7256865.jpg&fm=jpg',
-  fitting:
-    'https://images.pexels.com/photos/4622423/pexels-photo-4622423.jpeg?auto=compress&cs=tinysrgb&w=1600',
-  swatches:
-    'https://images.pexels.com/photos/8030147/pexels-photo-8030147.jpeg?auto=compress&cs=tinysrgb&w=1600',
+  hero: '/optimized/Service%20images/latest-fashion.jpg',
+  collaboration: '/optimized/Service%20images/lead-team.jpg',
+  sketches: '/optimized/Service%20images/competitive-pricing.jpg',
+  desk: '/optimized/Designing.jpg',
+  fitting: '/optimized/Service%20images/quality-assurance.jpg',
+  swatches: '/optimized/Service%20images/compliance.jpg',
 }
 
 const heroCards = [
@@ -175,7 +169,8 @@ function DesignStudioPage() {
                   alt={card.alt}
                   className="h-full w-full object-cover"
                   loading="eager"
-                />
+                decoding="async"
+/>
               </div>
             ))}
           </div>
@@ -259,7 +254,8 @@ function DesignStudioPage() {
                 alt="ZEAL design studio collaboration reference"
                 className="absolute inset-0 h-full w-full object-cover"
                 loading="lazy"
-              />
+              decoding="async"
+/>
               <div className="absolute inset-0 bg-gradient-to-t from-black/65 via-black/5 to-transparent" />
 
               <div className="absolute bottom-0 left-0 right-0 p-6 text-white sm:p-9">
@@ -324,7 +320,8 @@ function DesignStudioPage() {
                   alt="Initial fashion concept and sketch development"
                   className="aspect-[4/5] w-full object-cover"
                   loading="lazy"
-                />
+                decoding="async"
+/>
                 <p className="px-5 py-4 text-center text-sm font-semibold tracking-[0.08em]">
                   CREATIVE DIRECTION
                 </p>
@@ -336,7 +333,8 @@ function DesignStudioPage() {
                   alt="Garment development and fit refinement"
                   className="aspect-[4/5] w-full object-cover"
                   loading="lazy"
-                />
+                decoding="async"
+/>
                 <p className="px-3 py-3 text-center text-xs font-semibold tracking-[0.08em]">
                   PRODUCT DEVELOPMENT
                 </p>
@@ -409,7 +407,8 @@ function DesignStudioPage() {
                     alt={pillar.title}
                     className="aspect-[16/9] w-full object-cover transition-transform duration-700 group-hover:scale-105"
                     loading="lazy"
-                  />
+                  decoding="async"
+/>
                 </div>
                 <div className="p-7 sm:p-8">
                   <h3 className="text-2xl font-semibold tracking-[-0.03em]">
@@ -456,7 +455,8 @@ function DesignStudioPage() {
                   alt={image.alt}
                   className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
                   loading="lazy"
-                />
+                decoding="async"
+/>
               </div>
             ))}
           </div>

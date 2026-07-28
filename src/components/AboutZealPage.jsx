@@ -10,15 +10,15 @@ const heroStats = [
 
 const infrastructureImages = [
   {
-    src: '/Knitting.jpg',
+    src: '/optimized/Knitting.jpg',
     alt: 'Knitting and fabric creation machinery',
   },
   {
-    src: '/Stats%20Banner.jpg',
+    src: '/optimized/Stats%20Banner.jpg',
     alt: 'Production and finishing floor',
   },
   {
-    src: '/Garments.jpg',
+    src: '/optimized/Garments.jpg',
     alt: 'Garment handling and product presentation',
   },
 ]
@@ -74,13 +74,13 @@ const highlights = [
     title: 'Design Studio and Product Development',
     description:
       'From concept creation to sampling coordination, ZEAL builds collections with speed, relevance, and commercial clarity.',
-    image: '/Designing.jpg',
+    image: '/optimized/Designing.jpg',
   },
   {
     title: 'Manufacturing Capabilities and Quality Systems',
     description:
       'Integrated production systems and quality checkpoints support dependable output across categories and market requirements.',
-    image: '/Stats%20Banner.jpg',
+    image: '/optimized/Stats%20Banner.jpg',
   },
   {
     title: 'Brand Growth and Retail Expansion',
@@ -98,11 +98,12 @@ function AboutZealPage() {
           <div className="w-full overflow-hidden bg-[#111111] text-white shadow-[0_26px_60px_rgba(17,17,17,0.18)]">
             <div className="relative isolate overflow-hidden">
               <img
-                src="/Banner%201.jpg"
+                src="/optimized/Banner%201.jpg"
                 alt="ZEAL industrial campus and business environment"
                 className="absolute inset-0 h-full w-full object-cover opacity-40"
                 loading="eager"
-              />
+              decoding="async"
+/>
               <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(17,17,17,0.84),rgba(17,17,17,0.62),rgba(17,17,17,0.42))]" />
 
               <div className="relative mx-auto max-w-7xl px-6 py-16 sm:px-8 sm:py-20 lg:px-10 lg:py-24">
@@ -182,11 +183,12 @@ function AboutZealPage() {
 
             <figure className="h-full min-h-[340px] overflow-hidden rounded-[1.8rem] bg-[#ecece7] lg:min-h-full">
               <img
-                src="/About%201.jpg"
+                src="/optimized/About%201.jpg"
                 alt="ZEAL team and product environment"
                 className="h-full w-full object-cover transition-transform duration-500 hover:scale-[1.03]"
                 loading="lazy"
-              />
+              decoding="async"
+/>
             </figure>
           </div>
         </section>
@@ -198,11 +200,12 @@ function AboutZealPage() {
             <figure className="overflow-hidden rounded-[2rem] bg-white shadow-[0_22px_48px_rgba(17,17,17,0.07)]">
               <div className="aspect-[1.02/1]">
                 <img
-                  src="/Designing.jpg"
+                  src="/optimized/Designing.jpg"
                   alt="Design sketching and sampling process"
                   className="h-full w-full object-cover object-center"
                   loading="lazy"
-                />
+                decoding="async"
+/>
               </div>
             </figure>
 
@@ -266,7 +269,8 @@ function AboutZealPage() {
                       alt={image.alt}
                       className="h-full w-full object-cover transition-transform duration-500 hover:scale-[1.03]"
                       loading="lazy"
-                    />
+                    decoding="async"
+/>
                   </div>
                 </figure>
               ))}
@@ -316,11 +320,12 @@ function AboutZealPage() {
               <article className="overflow-hidden rounded-[1.8rem] border border-[#e5e5de] bg-white shadow-[0_18px_40px_rgba(17,17,17,0.06)]">
                 <div className="aspect-[1.35/0.8] overflow-hidden">
                   <img
-                    src="/Banner%201.jpg"
+                    src="/optimized/Banner%201.jpg"
                     alt="Manufacturing and operations campus"
                     className="h-full w-full object-cover"
                     loading="lazy"
-                  />
+                  decoding="async"
+/>
                 </div>
                 <div className="px-6 py-6">
                   <h3 className="text-[1.45rem] font-semibold tracking-[-0.03em] text-[#111111]">
@@ -341,7 +346,8 @@ function AboutZealPage() {
                     alt="Retail and showroom environment"
                     className="h-full w-full object-cover"
                     loading="lazy"
-                  />
+                  decoding="async"
+/>
                 </div>
                 <div className="px-6 py-6">
                   <h3 className="text-[1.45rem] font-semibold tracking-[-0.03em] text-[#111111]">
@@ -384,11 +390,12 @@ function AboutZealPage() {
 
             <figure className="overflow-hidden rounded-[2rem] bg-white shadow-[0_22px_48px_rgba(17,17,17,0.07)]">
               <img
-                src="/About%203.jpg"
+                src="/optimized/About%203.jpg"
                 alt="ZEAL workplace and team environment"
                 className="h-full w-full object-cover"
                 loading="lazy"
-              />
+              decoding="async"
+/>
             </figure>
           </div>
         </section>
@@ -478,7 +485,8 @@ function AboutZealPage() {
                       alt={item.title}
                       className="h-full w-full object-cover transition-transform duration-500 hover:scale-[1.03]"
                       loading="lazy"
-                    />
+                    decoding="async"
+/>
                   </div>
                   <div className="px-6 py-6">
                     <h3 className="text-[1.3rem] font-semibold tracking-[-0.03em] text-[#111111]">

@@ -6,28 +6,28 @@ const divisions = [
     title: 'In-house Studio',
     label:
       'Trend-driven design, product development, and creative direction led by an in-house team focused on innovation and market relevance.',
-    image: '/Designing.jpg',
+    image: '/optimized/Designing.jpg',
     imageAlt: 'ZEAL in-house fashion design and product development',
   },
   {
     title: 'Production Unit',
     label:
       'Advanced manufacturing with scalable capacity, strict quality control, and efficient turnaround aligned with global standards.',
-    image: '/Production-Unit.jpg',
+    image: '/optimized/Production-Unit.jpg',
     imageAlt: 'ZEAL garment manufacturing and production unit',
   },
   {
     title: 'Warehouse',
     label:
       'Integrated warehousing, inventory coordination, order fulfilment, packing, and dispatch systems supporting efficient product movement and reliable delivery.',
-    image: '/Banner%203.jpg',
+    image: '/optimized/Banner%203.jpg',
     imageAlt: 'ZEAL warehousing, inventory, and fulfilment operations',
   },
   {
     title: 'Multi Showrooms',
     label:
       'Physical retail spaces designed to enhance customer experience and strengthen brand presence across key markets.',
-    image: '/About%201.jpg',
+    image: '/optimized/About%201.jpg',
     imageAlt: 'ZEAL showroom and clothing display environment',
   },
 ]

@@ -273,11 +273,15 @@ const filters = [
   })),
 ]
 
+const toOptimizedJpg = (file) => file.replace(/\.[^.]+$/, '.jpg')
+
 const productImagePath = (folder, file) =>
-  `/Product%20images/${encodeURIComponent(folder)}/${encodeURIComponent(file)}`
+  `/optimized/Product%20images/${encodeURIComponent(folder)}/${encodeURIComponent(
+    toOptimizedJpg(file),
+  )}`
 
 const bannerImagePath = (file) =>
-  `/Product%20banners/${encodeURIComponent(file)}`
+  `/optimized/Product%20banners/${encodeURIComponent(toOptimizedJpg(file))}`
 
 const galleryItems = collectionBanners.flatMap((collection) =>
   collection.images.map((file, index) => ({
@@ -326,7 +330,9 @@ function ProductShopPage() {
 
   useEffect(() => {
     const intervalId = window.setInterval(() => {
-      changeBanner(1)
+      if (!document.hidden) {
+        changeBanner(1)
+      }
     }, 7000)
 
     return () => window.clearInterval(intervalId)
@@ -364,6 +370,8 @@ function ProductShopPage() {
                   alt={banner.alt}
                   className="h-full w-full object-contain object-center"
                   loading={index === 0 ? 'eager' : 'lazy'}
+                  decoding={index === 0 ? 'sync' : 'async'}
+                  fetchPriority={index === 0 ? 'high' : 'low'}
                 />
               </div>
             )
@@ -438,7 +446,7 @@ function ProductShopPage() {
             {visibleItems.map((item) => (
               <article
                 key={item.id}
-                className="group relative mb-3 break-inside-avoid overflow-hidden rounded-[1rem] bg-[#eeeae5] sm:mb-4 sm:rounded-[1.25rem]"
+                className="group relative mb-3 break-inside-avoid overflow-hidden rounded-[1rem] bg-[#eeeae5] [content-visibility:auto] [contain-intrinsic-size:320px] sm:mb-4 sm:rounded-[1.25rem]"
               >
                 <img
                   src={item.image}

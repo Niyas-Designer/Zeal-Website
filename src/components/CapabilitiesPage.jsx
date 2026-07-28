@@ -175,7 +175,8 @@ function CapabilitiesPage() {
                   alt="Folded fabric representing responsible sourcing"
                   className="h-full w-full object-cover"
                   loading="lazy"
-                />
+                decoding="async"
+/>
               </div>
             </figure>
           </div>
